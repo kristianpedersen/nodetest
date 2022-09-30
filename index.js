@@ -19,4 +19,5 @@ const server = http.createServer(async (req, res) => {
     res.end(challenge)
 });
 
+console.log("Hei og hå!")
 server.listen(process.env.PORT || 8443);
