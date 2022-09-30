@@ -1,21 +1,12 @@
-const greier = {
-    data: {
-        merData: {
-            endaMer: Math.floor(Math.random() * 100)
-        }
-    }
-}
-
 const http = require("http");
+
 const server = http.createServer((req, res) => {
-    if (req.method === "POST") {
-        res.writeHead(200, { "Content-Type": "text-plain" });
-        res.end("test")
-    } else {
-        res.writeHead(405, { "Content-Type": "text-plain" });
-        res.end("Ikkje bra\n")
-    }
+    res.writeHead(200, { "Content-Type": "text-plain" });
+
+    console.clear();
+    console.log(req)
+
+    res.end("Det gikk bra")
 });
 
 server.listen(process.env.PORT || 8443);
-console.log("Hei fra serveren")
