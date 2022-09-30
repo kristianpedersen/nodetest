@@ -9,5 +9,5 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(8443);
+server.listen(process.env.PORT || 8443);
 console.log("Hei fra serveren")
