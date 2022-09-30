@@ -10,8 +10,7 @@ const http = require("http");
 const server = http.createServer((req, res) => {
     if (req.method === "POST") {
         res.writeHead(200, { "Content-Type": "text-plain" });
-        res.end()
-        console.log(JSON.stringify(req.headers, null, 2))
+        res.end("test")
     } else {
         res.writeHead(405, { "Content-Type": "text-plain" });
         res.end("Ikkje bra\n")
