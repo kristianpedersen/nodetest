@@ -21,7 +21,7 @@ const handler = (req, res) => {
     console.log({ res })
     if (req.headers['content-type'] !== 'application/json') {
         res.status(400)
-        res.json({ message: 'Bad request' })
+        res.json({ message: 'Bad request + req.headers["content-type"]' })
         return
     }
 
