@@ -1,7 +1,7 @@
 console.log("Hei!");
 
 import algoliasearch from 'algoliasearch'
-import sanityClient, { SanityDocumentStub } from '@sanity/client'
+import sanityClient from '@sanity/client'
 import indexer from 'sanity-algolia'
 
 const algolia = algoliasearch(
