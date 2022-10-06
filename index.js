@@ -6,7 +6,7 @@ import indexer from 'sanity-algolia'
 
 const algolia = algoliasearch(
     'C26QC41PWH',
-    "e23b64dadd4c26f8678c15a2593521fa"
+    "52b1698a6f2c793b80cfe5a3b0eb5f88"
 )
 const sanity = sanityClient({
     projectId: 'sukats6f',
