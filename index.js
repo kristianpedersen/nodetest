@@ -9,8 +9,8 @@ const algolia = algoliasearch(
     "e23b64dadd4c26f8678c15a2593521fa"
 )
 const sanity = sanityClient({
-    projectId: 'my-sanity-project-id',
-    dataset: 'my-dataset-name',
+    projectId: 'sukats6f',
+    dataset: 'test',
     // If your dataset is private you need to add a read token.
     // You can mint one at https://manage.sanity.io,
     token: 'read-token',
