@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kristianpedersen/nodetest#readme",
   "dependencies": {
+    "@sanity/client": "^3.4.1",
     "algoliasearch": "^4.14.2",
     "sanity-algolia": "^1.0.2"
   }

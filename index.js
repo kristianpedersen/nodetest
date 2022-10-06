@@ -71,7 +71,7 @@ const handler = (req, res) => {
         // The second parameter is a function that maps from a fetched Sanity document
         // to an Algolia Record. Here you can do further mutations to the data before
         // it is sent to Algolia.
-        (document: SanityDocumentStub) => {
+        (document) => {
             switch (document._type) {
                 case 'post':
                     return Object.assign({}, document, {
@@ -95,7 +95,7 @@ const handler = (req, res) => {
         // decides if it should be indexed or not. This would also be the place to
         // implement any `publishedAt` datetime visibility rules or other custom
         // visibility scheme you may be using.
-        (document: SanityDocumentStub) => {
+        (document) => {
             if (document.hasOwnProperty('isHidden')) {
                 return !document.isHidden
             }
