@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/kristianpedersen/nodetest/issues"
   },
-  "homepage": "https://github.com/kristianpedersen/nodetest#readme"
+  "homepage": "https://github.com/kristianpedersen/nodetest#readme",
+  "dependencies": {
+    "algoliasearch": "^4.14.2",
+    "sanity-algolia": "^1.0.2"
+  }
 }
